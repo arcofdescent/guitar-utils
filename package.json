@@ -1,0 +1,11 @@
+{
+  "name": "guitar-utils",
+  "version": "1.0.0",
+  "description": "Utilities for guitar fretboard and audio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
