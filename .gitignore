@@ -3,6 +3,9 @@ logs
 *.log
 npm-debug.log*
 
+# vim swp files
+*.swp
+
 # Runtime data
 pids
 *.pid
@@ -29,9 +32,14 @@ build/Release
 # Dependency directories
 node_modules
 jspm_packages
+build
 
 # Optional npm cache directory
 .npm
 
 # Optional REPL history
 .node_repl_history
+
+# vim session
+Session.vim
+
