@@ -7,7 +7,7 @@ const pitches = [ 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B
 
 module.exports = {
   
-  get_pitch_at: function (string = "1", fret ="3") {
+  get_pitch_at: function(string = "1", fret ="3") {
 
     let curr_pitch = strings[string-1];
     let p;
