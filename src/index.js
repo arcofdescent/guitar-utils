@@ -5,6 +5,14 @@ import _ from 'lodash';
 const strings = [ 'E', 'B', 'G', 'D', 'A', 'E', ];
 const pitches = [ 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B', ];
 
+const enharmonics = {
+  'C#': 'D&#9837;',
+  'D#': 'E&#9837;',
+  'F#': 'G&#9837;',
+  'G#': 'A&#9837;',
+  'A#': 'B&#9837;',
+};
+
 module.exports = {
   
   get_pitch_at: function(string = "1", fret ="3") {
@@ -78,5 +86,10 @@ module.exports = {
 
     return pitch_number;
   },
+
+  get_enharmonic: function(n) {
+    return enharmonics.n; 
+  }
+
 };
 
