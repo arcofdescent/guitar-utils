@@ -88,7 +88,7 @@ module.exports = {
   },
 
   get_enharmonic: function(n) {
-    return enharmonics.n; 
+    return enharmonics[n]; 
   }
 
 };
