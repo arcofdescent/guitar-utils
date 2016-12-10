@@ -1,6 +1,6 @@
 {
   "name": "guitar-utils",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Utilities for guitar fretboard and audio",
   "main": "./build/index.js",
   "scripts": {

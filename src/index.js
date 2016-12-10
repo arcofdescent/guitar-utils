@@ -89,7 +89,23 @@ module.exports = {
 
   get_enharmonic: function(n) {
     return enharmonics[n]; 
-  }
+  },
+
+  // get pitch 2 half steps ahead
+  get_next_pitch: function(p) {
+  
+    let idx = _.indexOf(pitches, p);
+    
+    if (idx >= pitches.length - 2) {
+      idx = idx - pitches.length + 2;
+    }
+    else {
+      idx = idx + 2;
+    }
+
+    return pitches[idx];
+  },
+
 
 };
 
