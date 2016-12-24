@@ -92,20 +92,33 @@ module.exports = {
   },
 
   // get pitch 2 half steps ahead
-  get_next_pitch: function(p) {
+  get_next_pitch: function(p, steps=2) {
   
     let idx = _.indexOf(pitches, p);
     
-    if (idx >= pitches.length - 2) {
-      idx = idx - pitches.length + 2;
+    if (idx >= pitches.length - steps) {
+      idx -= pitches.length + steps;
     }
     else {
-      idx = idx + 2;
+      idx += steps;
     }
 
     return pitches[idx];
   },
 
+  // get pitch 2 half steps behind
+  get_prev_pitch: function(p, steps=2) {
+  
+    let idx = _.indexOf(pitches, p);
+    
+    if (idx < steps) {
+      idx += pitches.length - steps;
+    }
+    else {
+      idx -= steps;
+    }
 
+    return pitches[idx];
+  },
 };
 
